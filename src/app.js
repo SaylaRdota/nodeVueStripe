@@ -1,5 +1,4 @@
 const app = require('./config/server')
-const Sequelize = require('sequelize');
 require ('./app/api/rest/payStripe')(app)
 
 //iniciar el sevidor
