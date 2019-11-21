@@ -2,7 +2,7 @@
 	"name": "live-cuba",
 	"version": "1.0.0",
 	"description": "Este es el proyecto live-cuba generado por Michel Yanes López",
-	"main": "app.js",
+	"main": "src/app.js",
 	"scripts": {
 		"test": "echo \"Error: Ha ocurrido un error\" && exit 1",
 		"nodemon": "nodemon ./src/app.js",
