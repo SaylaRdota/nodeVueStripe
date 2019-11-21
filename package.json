@@ -5,9 +5,7 @@
 	"main": "src/app.js",
 	"scripts": {
 		"test": "echo \"Error: Ha ocurrido un error\" && exit 1",
-		"nodemon": "nodemon ./src/app.js",
-		"startServer": "node src/app.js",
-		"migracion": "sequelize-auto -o ./src/app/models -d live-cuba -h localhost -u root -p 3306 -x  -e mysql"
+		"start": "node src/app.js"
 	},
 	"author": "Michel Yanes López",
 	"license": "ISC",
