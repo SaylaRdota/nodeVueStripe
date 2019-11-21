@@ -7,13 +7,13 @@ module.exports = (app) => {
             stripe.customers
                 .create({
                     name: 'Michel',
-                    email: 'michelyaneslopez@gmail.com',
+                    email: req.body.mail,
                     source: req.body.data.id
                 })
                 .then( customer => {
                     console.log('Customer: ', customer)
                     stripe.charges.create({
-                            amount: '5000',
+                            amount: req.body.cant,
                             currency: "usd",
                             customer: customer.id,
                             description: 'Esta es la descripcion del producto'
