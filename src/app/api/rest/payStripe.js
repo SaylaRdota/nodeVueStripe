@@ -13,7 +13,7 @@ module.exports = (app) => {
                 .then( customer => {
                     console.log('Customer: ', customer)
                     stripe.charges.create({
-                            amount: req.body.cant,
+                            amount: req.body.cant.toString(),
                             currency: "usd",
                             customer: customer.id,
                             description: 'Esta es la descripcion del producto'
