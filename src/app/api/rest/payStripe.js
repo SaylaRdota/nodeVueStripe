@@ -20,12 +20,11 @@ module.exports = (app) => {
                         })
                         .then(response => {
                         console.log('charges: ', response)
-                        res.send({maesje: 'todo ok'})
+                        res.send({mensaje: 'todo ok'})
                     })
                     }
                 )
-
-                .catch(err => console.log(err));
+                .catch(err => res.send({mensaje: err}));
         } catch (err) {
             res.send(err);
         }
