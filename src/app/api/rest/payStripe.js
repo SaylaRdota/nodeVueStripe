@@ -6,7 +6,7 @@ module.exports = (app) => {
         try {
             stripe.customers
                 .create({
-                    name: 'Yanko',
+                    name: 'Yomismo',
                     email: req.body.mail,
                     source: req.body.data.id
                 })
