@@ -6,14 +6,14 @@ module.exports = (app) => {
         try {
             stripe.customers
                 .create({
-                    name: 'Yomismo',
+                    name: 'Yanko',
                     email: req.body.mail,
                     source: req.body.data.id
                 })
                 .then( customer => {
                     console.log('Customer: ', customer)
                     stripe.charges.create({
-                            amount: req.body.cant.toString(),
+                            amount: (req.body.cant * 100).toString(),
                             currency: "usd",
                             customer: customer.id,
                             description: 'Esta es la descripcion del producto'
