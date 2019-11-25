@@ -27,7 +27,7 @@ const app = express()
 
 app.use(express.static('views'));
 app.use(cors({credentials: true, origin: true}))
-var serverPort = process.env.PORT || 8080
+var serverPort = process.env.PORT || 8083
 app.set('port', serverPort)
 
 //middleware
