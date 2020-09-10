@@ -23,7 +23,7 @@
 		"graphql": "^14.1.1",
 		"graphql-server-express": "^1.4.0",
 		"graphql-tools": "^4.0.4",
-		"http-proxy": "^1.18.0",
+		"http-proxy": "^1.18.1",
 		"http-proxy-middleware": "^0.20.0",
 		"install": "^0.12.2",
 		"jwt-simple": "^0.5.5",
